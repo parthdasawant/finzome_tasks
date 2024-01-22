@@ -1,19 +1,82 @@
-## General Guidelines:
-1. Follow standard Python code style practices (PEP-8).
-2. Assignment should be a .py file.
-3. If external packages are required, then don’t forget to add requirements.txt file.
-4. Use meaningful variable names. Code should be properly structured and readable.
-5. Try to write an optimized with minimum complexity.
-### Task1:
-Calculate the Daily Volatility and annualized volatility for the dataset in Python. Please use the data file from here.
-You can download similar files from nseindia website. Implement the formulas:
-1. Daily Returns = (current close / previous close) - 1 (This will be a data series)
-2. Daily Volatility = Standard Deviation (Daily Returns) (This will be a single value)
-3. Annualized Volatility = Daily Volatility * Square Root (length of data) (This will be a single value)
-You can decide on whatever tools/packages you need to implement the above data calculations.
-### Task2:
-Make a http endpoint using any one of the python web frameworks – FastAPI or Flask or Django. Implement following Functionality:
-1. Accept a csv file or a parameter with which data can be fetched from directory. (like file used in Task1)
-2. Compute Daily, Annualized volatility and return these values.
-You can decide on the endpoint name, file headers and other required parameters for the functionality implementation.
-Please mention in the docstrings what parameters name and headers were chosen.
+# Project Name
+
+Calculate the Daily Volatility and annualized volatility for the dataset in Python.
+
+## Overview
+
+Briefly describe the purpose and functionality of the project.
+
+## Prerequisites
+
+Make sure you have the following installed before setting up the project:
+
+- Python (version 3.11.3)
+- other dependencies are mentioned in `requirements.txt`
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    https://github.com/parthdasawant/finzome_tasks.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd finzome_tasks
+    ```
+
+3. Set up a virtual environment (recommended):
+
+    ```bash
+    python -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    - On Windows:
+
+        ```bash
+        .\venv\Scripts\activate
+        ```
+
+    - On macOS/Linux:
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+5. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+Explain how to use the project. Include any configuration steps, command-line options, or other relevant information.
+
+Example:
+
+### For Task 1 
+
+```bash
+python task1.py
+```
+
+### For Task 2
+
+1. Run `main.py`.
+
+   ```bash
+   python main.py
+   ```
+
+2. Import Postman Collection in Postman for FastAPI implementation. Open Postman
+
+   **File > Import > select or drop file `Postman Collection/Finzome Task Collection.postman_collection.json`.**
+
+3. Send Post request(Make sure `main.py` is running & the request body is selected with form-data with the file of data)
+
+   <img width="100%" alt="Screenshot 2024-01-22 at 1 40 14 PM" src="https://github.com/parthdasawant/finzome_tasks/assets/80618762/cae21992-cd91-4192-ae92-09e6c85164d6">
