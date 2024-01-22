@@ -4,7 +4,14 @@ Calculate the Daily Volatility and annualized volatility for the dataset in Pyth
 
 ## Overview
 
-Briefly describe the purpose and functionality of the project.
+```bash
+.
+├── main.py (for Task 2 solution)
+├── NIFTY 50-22-01-2023-to-22-01-2024.csv
+├── requirements.txt
+└── task1.py (for Task 1 solution)
+
+```
 
 ## Prerequisites
 
