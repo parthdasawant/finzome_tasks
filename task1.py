@@ -12,7 +12,8 @@ def calculate_volatilities(data_file):
 
 
 if __name__ == "__main__":
-    data_file = "temp.csv"  # Replace with the actual file path
+    # Replace with the actual file path
+    data_file = "NIFTY 50-22-01-2023-to-22-01-2024.csv"
     daily_volatility, annualized_volatility = calculate_volatilities(data_file)
     print("Daily Volatility:", daily_volatility)
     print("Annualized Volatility:", annualized_volatility)

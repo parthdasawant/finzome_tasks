@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "4b07a071-e4be-4ab4-b1d3-b82d98ed4f45",
+		"name": "Finzome Task Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28480504"
+	},
+	"item": [
+		{
+			"name": "task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1eeb8f06-b867-45e0-b1a0-942063c7d5c0"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/calculate_volatilities/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"calculate_volatilities",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
