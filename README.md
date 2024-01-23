@@ -25,7 +25,7 @@ Make sure you have the following installed before setting up the project:
 1. Clone the repository:
 
     ```bash
-    https://github.com/parthdasawant/finzome_tasks.git
+    git clone https://github.com/parthdasawant/finzome_tasks.git
     ```
 
 2. Navigate to the project directory:
